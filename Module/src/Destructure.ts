@@ -15,7 +15,7 @@
 
     const {
         contact, 
-        name: {firstName : fName} //set fName of firstName.it called type alias
+        name: {firstName : fName} //set fName of firstName.it called name alias
     }
      = user;
 
