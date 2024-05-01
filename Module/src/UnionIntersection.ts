@@ -44,4 +44,6 @@
         designation2: 'Backend Developer'
     }
 
+    console.log(FullDeveloper)
+
 }
