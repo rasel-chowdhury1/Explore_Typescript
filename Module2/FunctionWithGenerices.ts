@@ -38,7 +38,7 @@
         age: 28
     })
 
-    const addToCourse = <T>(student: T) => {
+    const addCourseToStudent = <T>(student: T) => {
         const course = 'Next level web developer';
 
         return {
@@ -47,8 +47,8 @@
         }
     }
 
-    const student1 = addToCourse({name: 'Mr. X', email: 'x@gmail.com', dev:'next level developer'})
-    const student2 = addToCourse({name: 'Mr. Y', email: 'Y@gmail.com', hasWatch: {
+    const student1 = addCourseToStudent({name: 'Mr. X', email: 'x@gmail.com', dev:'next level developer'})
+    const student2 = addCourseToStudent({name: 'Mr. Y', email: 'Y@gmail.com', hasWatch: {
         model: 'Apple Watch',
         price: 35000
     }})
