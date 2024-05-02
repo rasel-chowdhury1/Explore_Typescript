@@ -1,6 +1,8 @@
 {
 //Type Assertion || Narrowing
 
+// if as a developer,better understand and declear of typescript it is called type assertion
+
 let anything: any;
 anything = 'I am next level developer';
 
