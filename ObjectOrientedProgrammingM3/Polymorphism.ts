@@ -56,4 +56,47 @@
     // getSleepingPerday(person1);
     // getSleepingPerday(student1);
     // getSleepingPerday(developer1);
+
+    class Shape {
+        getArea(){
+            return 0;
+        }
+    }
+
+    //Circul Area = Pi * radius * radius;
+    class Circel extends Shape {
+        radius: number;
+        
+        constructor(radius: number){
+            super()
+            this.radius = radius
+        }
+
+        getArea(){
+            return Math.PI * this.radius * this.radius
+        }
+    }
+
+    //Rectangel area = height * width
+    class Rectangel extends Shape{
+        constructor(public height: number, public width: number){
+            super()
+        }
+
+        getArea(){
+            return this.height * this.width;
+        }
+    }
+
+    const getShapeArea = (param: Shape) => {
+        return param.getArea()
+    }
+
+    const shape1 = new Shape();
+    const circel1 = new Circel(10);
+    const rectangel1 = new Rectangel(20,40);
+
+    console.log(getShapeArea(shape1));
+    console.log(getShapeArea(circel1));
+    console.log(getShapeArea(rectangel1))
 }
