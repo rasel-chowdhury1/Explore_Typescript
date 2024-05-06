@@ -44,6 +44,38 @@
     student1.getSleep(8)
     const teacher = new Teacher('Abhi', 32, 'kamal bazar', 'banker');
     teacher.takeClass(10)
+    
+
+    class Animal {
+        name: string;
+
+        constructor(name: string){
+            this.name = name;
+        }
+
+        speak(){
+            console.log(this.name + ' make a noise')
+        }
+    }
+
+    class Dog extends Animal{
+        
+        speak(): void {
+            console.log('ghew ghew')
+        }
+    }
+
+    const tommy = new Dog('tommy');
+    console.log(tommy.name)
+    tommy.speak()
+    
+
+    const add = (x, y) => {
+        return x+y;
+    }
+
+    console.log(add(10,"20"))
 
 
+    
 }

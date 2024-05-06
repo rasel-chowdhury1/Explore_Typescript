@@ -42,4 +42,5 @@ let ageName: [number, string] = [25, 'Rasel'];
 
 ageName[0] = 26;
 
+
 console.log(ageName[0])
